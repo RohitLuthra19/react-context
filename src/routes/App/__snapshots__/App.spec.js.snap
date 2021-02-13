@@ -29,7 +29,7 @@ exports[`App Component should render without throwing an error 1`] = `
           className="spinner"
           style={
             Object {
-              "display": "block",
+              "display": "none",
               "fontSize": "3em",
               "left": "60%",
               "top": "60%",
