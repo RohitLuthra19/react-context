@@ -44,7 +44,7 @@ const Reducer = (state, action) => {
         data: { data: imagesData },
       } = action;
 
-      const newPage = page || 0;
+      const newPage = page || 1;
       let images = [...imagesData];
       if (isMore) {
         images = [...state.images, ...imagesData];
