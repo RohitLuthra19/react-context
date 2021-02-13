@@ -60,21 +60,6 @@ export class Main extends React.PureComponent {
     );
   }
 
-  /* componentDidMount() {
-    const [{ limit, page, activeCategory }] = this.context;
-    console.log("activeCategory:", activeCategory);
-    if (activeCategory !== -1) {
-      this.getSingleCategory(activeCategory, limit, page, false);
-    }
-  } */
-
-  /* componentDidUpdate(prevProps) {
-    const [{ limit, page, activeCategory, images }] = this.context;
-    if (activeCategory !== -1 && images.length === 0) {
-      this.getSingleCategory(activeCategory, limit, page, false);
-    }
-  } */
-
   ///////////////////////////////////////////////////////////////////////
   //  RENDER METHODS
   ///////////////////////////////////////////////////////////////////////
@@ -98,8 +83,6 @@ export class Main extends React.PureComponent {
   ///////////////////////////////////////////////////////////////////////
   handleMoreClick = () => {
     const [{ limit, page, activeCategory }] = this.context;
-
-    console.log(page);
     this.getSingleCategory(activeCategory, limit, page + 1, true);
   };
 }
